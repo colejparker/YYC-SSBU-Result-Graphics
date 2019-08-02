@@ -7,10 +7,29 @@
              mc:Ignorable="d" 
              d:DesignHeight="111" d:DesignWidth="120">
     <Canvas>
-        <Image Source="chara_3_packun_02.png" Stretch="UniformToFill" Height="111" Width="120"/>
+        <Image x:Name="doublesOneImage" Stretch="UniformToFill" Height="113.286" Width="59.265" Canvas.Top="-2.286"/>
+
+        <Image x:Name="doublesTwoImage" Stretch="UniformToFill" Height="113.114" Width="58.552" Canvas.Left="1.241" Canvas.Top="-2.089" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0.121"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="mainImage" Stretch="UniformToFill" Height="113.286" Width="113.65" Canvas.Top="-2.286"/>
+        <Rectangle Fill="White" Height="16.23" Canvas.Top="96.04" Width="73"/>
         <Viewbox Height="14.96" Canvas.Top="96.04" Width="73" HorizontalAlignment="Left">
-            <TextBlock TextWrapping="Wrap" Background="White" Foreground="#FFE01E22" Width="78.892" HorizontalAlignment="Left" Height="16" FontFamily="Berlin Sans FB" FontSize="14"><Run FontWeight="Bold" Text="CHOMO"/></TextBlock>
+            <TextBlock x:Name="tagText" TextWrapping="NoWrap" Background="White" HorizontalAlignment="Left" FontFamily="Berlin Sans FB" FontSize="14" FontWeight="Bold" Text="NAME">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="{DynamicResource uofcRed}"/>
+                </TextBlock.Foreground></TextBlock>
         </Viewbox>
+        <Image x:Name="secondaryOne" Height="14.96" Canvas.Left="73" Canvas.Top="96.04" Width="15.14"/>
+        <Image x:Name="secondaryTwo" Height="14.96" Canvas.Left="88.902" Canvas.Top="96.04" Width="15.14"/>
+        <Image x:Name="secondaryThree" Height="14.96" Canvas.Left="104.606" Canvas.Top="96.04" Width="15.14"/>
 
     </Canvas>
 </UserControl>

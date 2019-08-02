@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:SmashResults"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <Color x:Key="uofcRed">#FFE01E22</Color>
+
     </Application.Resources>
 </Application>

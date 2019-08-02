@@ -1,0 +1,19 @@
+﻿<Window x:Class="SmashResults.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmashResults"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="543" Width="866">
+    <Canvas x:Name="Main_Canvas" HorizontalAlignment="Left" Height="533" VerticalAlignment="Top" Width="856" Margin="0,0,0,-17.5">
+        <Canvas x:Name="SelectCanvas" Height="523" Width="856"/>
+        <Canvas x:Name="ResultsCanvas" Height="523" Width="856">
+            <Image x:Name="MRUPic" Height="584.5" Width="795" Source="mrusmash.png" Canvas.Top="-51" Canvas.Left="36"/>
+            <Image x:Name="UOFCPic" Height="584.5" Width="795" Source="uofcsmash.png" Canvas.Top="-51" Canvas.Left="36"/>
+            <Viewbox Height="120" Canvas.Left="109.25" Canvas.Top="120.5" Width="117">
+                <local:Placing Height="116.654" Width="114.872"/>
+            </Viewbox>
+        </Canvas>
+    </Canvas>
+</Window>

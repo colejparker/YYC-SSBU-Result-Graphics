@@ -10,7 +10,7 @@
         <Rectangle Fill="#FFF4F4F5" Width="380" Height="180"/>
         <TextBox x:Name="nameEntry" Height="19" Canvas.Left="65" TextWrapping="Wrap" Text="Enter name here..." Canvas.Top="10" Width="294"/>
         <TextBlock Height="19" TextWrapping="Wrap" Text="Name" Canvas.Top="10" Width="81" Canvas.Left="10"/>
-        <ComboBox x:Name="mainChoose" Height="25" Canvas.Left="130" Canvas.Top="34" Width="229"/>
+        <ComboBox x:Name="mainChoose" Height="25" Canvas.Left="130" Canvas.Top="34" Width="229" IsManipulationEnabled="True"/>
         <ComboBox x:Name="doubleChoose" Height="25" Canvas.Left="130" Canvas.Top="64" Width="229"/>
         <ComboBox x:Name="secOneChoose" Height="25" Canvas.Left="130" Canvas.Top="94" Width="229"/>
         <ComboBox x:Name="secTwoChoose" Height="25" Canvas.Left="130" Canvas.Top="123" Width="229"/>

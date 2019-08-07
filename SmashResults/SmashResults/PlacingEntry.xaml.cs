@@ -26,6 +26,7 @@ namespace SmashResults
         public PlacingEntry()
         {
             InitializeComponent();
+
             populateSecondaries();
             populateMains();
         }
@@ -40,11 +41,11 @@ namespace SmashResults
             secTwoChoose.SelectedValue = "None";
             secThreeChoose.Items.Add("None");
             secThreeChoose.SelectedValue = "None";
-
+            
             foreach (string file in files) {
-                secOneChoose.Items.Add(Path.GetFileName(file));
-                secTwoChoose.Items.Add(Path.GetFileName(file));
-                secThreeChoose.Items.Add(Path.GetFileName(file));
+                secOneChoose.Items.Add(translateFilenameToChoice(Path.GetFileName(file)));
+                secTwoChoose.Items.Add(translateFilenameToChoice(Path.GetFileName(file)));
+                secThreeChoose.Items.Add(translateFilenameToChoice(Path.GetFileName(file)));
             }
         }
 
@@ -59,9 +60,45 @@ namespace SmashResults
 
             foreach (string file in files)
             {
-                mainChoose.Items.Add(Path.GetFileName(file));
-                doubleChoose.Items.Add(Path.GetFileName(file));
+                mainChoose.Items.Add(translateFilenameToChoice(Path.GetFileName(file)));
+                doubleChoose.Items.Add(translateFilenameToChoice(Path.GetFileName(file)));
             }
+        }
+
+        private String translateFilenameToChoice(String str)
+        {
+            String retString = str.Replace("_", "");
+            retString = retString.Replace("chara1", "");
+            retString = retString.Replace("chara2", "");
+            retString = retString.Replace(".png", "");
+            retString = retString.Replace("brave", "hero");
+            retString = retString.Replace("captain", "captainfalcon");
+            retString = retString.Replace("donkey", "donkeykong");
+            retString = retString.Replace("gamewatch", "gameandwatch");
+            retString = retString.Replace("ganon", "ganondorf");
+            retString = retString.Replace("gaogaen", "incineroar");
+            retString = retString.Replace("gekkouga", "greninja");
+            retString = retString.Replace("jack", "joker");
+            retString = retString.Replace("kamui", "corrin");
+            retString = retString.Replace("koopa", "bowser");
+            retString = retString.Replace("mariod", "drmario");
+            retString = retString.Replace("murabito", "villager");
+            retString = retString.Replace("packun", "piranhaplant");
+            retString = retString.Replace("pfushigisou", "ivysaur");
+            retString = retString.Replace("pikmin", "olimar");
+            retString = retString.Replace("pitb", "darkpit");
+            retString = retString.Replace("plizardon", "charizard");
+            retString = retString.Replace("ptrainer", "pokemontrainer");
+            retString = retString.Replace("pzenigame", "squirtle");
+            retString = retString.Replace("purin", "jigglypuff");
+            retString = retString.Replace("reflet", "robin");
+            retString = retString.Replace("robot", "rob");
+            retString = retString.Replace("rockman", "megaman");
+            retString = retString.Replace("rosetta", "rosalina");
+            retString = retString.Replace("samusd", "darksamus");
+            retString = retString.Replace("shizue", "isabelle");
+            retString = retString.Replace("szerosuit", "zerosuitsamus");
+            return retString;
         }
     }
 }

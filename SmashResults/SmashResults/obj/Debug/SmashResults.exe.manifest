@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SmashResults.exe" size="3966408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SmashResults.exe" size="3968968">
       <assemblyIdentity name="SmashResults" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>R/eame8MWlYJR0Cgq4/1bWlRmDx5zr2gVVz80JZ2WsM=</dsig:DigestValue>
+        <dsig:DigestValue>N+YQRUbvw2SZE1MvpS3YC2KB4U5vqI1B/yyhajcfZEE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

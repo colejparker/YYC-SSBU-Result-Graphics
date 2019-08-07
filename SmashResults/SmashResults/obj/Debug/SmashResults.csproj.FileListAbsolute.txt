@@ -41,3 +41,28 @@ C:\Users\Cole\Documents\Smash Results\SmashResults\SmashResults\bin\Debug\SmashR
 C:\Users\Cole\Documents\Smash Results\SmashResults\SmashResults\bin\Debug\SmashResults.application
 C:\Users\Cole\Documents\Smash Results\SmashResults\SmashResults\obj\Debug\SmashResults.exe.manifest
 C:\Users\Cole\Documents\Smash Results\SmashResults\SmashResults\obj\Debug\SmashResults.application
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\bin\Debug\SmashResults.exe.config
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\bin\Debug\SmashResults.exe.manifest
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\bin\Debug\SmashResults.application
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\bin\Debug\SmashResults.exe
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\bin\Debug\SmashResults.pdb
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults.csprojAssemblyReference.cache
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\MainWindow.g.cs
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\Placing.g.cs
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\PlacingEntry.g.cs
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\App.g.cs
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults_MarkupCompile.cache
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults_MarkupCompile.lref
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\App.baml
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\MainWindow.baml
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\Placing.baml
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\PlacingEntry.baml
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults.g.resources
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults.Properties.Resources.resources
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults.csproj.GenerateResource.cache
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults.csproj.CoreCompileInputs.cache
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults.exe.manifest
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults.application
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults.exe
+C:\Users\Cole\Documents\YYC SSBU Result Graphics\SmashResults\SmashResults\obj\Debug\SmashResults.pdb

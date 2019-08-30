@@ -42,14 +42,27 @@ namespace SmashResults
             Brush textColor = null;
             if ((bool) mruRadio.IsChecked)
             {
-                titleText.Text = "SMASH @ MRU";
+                if (numberEntry.Text == "Enter number here..." || numberEntry.Text == "")
+                {
+                    titleText.Text = "SMASH @ MRU";
+                } else
+                {
+                    titleText.Text = "SMASH @ MRU #" + numberEntry.Text;
+                }
                 textColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FF1C5C9A"));
                 MRUPic.Visibility = Visibility.Visible;
                 UOFCPic.Visibility = Visibility.Hidden;
             }
             else
             {
-                titleText.Text = "SMASH @ U OF C";
+                if (numberEntry.Text == "Enter number here..." || numberEntry.Text == "")
+                {
+                    titleText.Text = "SMASH @ U OF C";
+                }
+                else
+                {
+                    titleText.Text = "SMASH @ U OF C #" + numberEntry.Text;
+                }
                 textColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFE01E22"));
                 MRUPic.Visibility = Visibility.Hidden;
                 UOFCPic.Visibility = Visibility.Visible;
@@ -78,11 +91,15 @@ namespace SmashResults
             ResultsCanvas.Visibility = Visibility.Visible;
         }
 
-        private static BitmapImage GetImage(string imageUri)
+        private static BitmapImage GetImage(string imageUri, Boolean reverseBool)
         {
             var bitmapImage = new BitmapImage();
             bitmapImage.BeginInit();
             bitmapImage.UriSource = new Uri(imageUri, UriKind.RelativeOrAbsolute);
+            if (reverseBool)
+            {
+                bitmapImage.Rotation = Rotation.Rotate180;
+            }
             bitmapImage.EndInit();
             return bitmapImage;
         }
@@ -91,26 +108,41 @@ namespace SmashResults
         {
             pl.tagText.Text = pe.nameEntry.Text.ToUpper();
             if (pe.secOneChoose.SelectedValue != "None")
-                pl.secondaryOne.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_2\" + translateChoiceToFilename(pe.secOneChoose.SelectedValue.ToString(), 2));
+                pl.secondaryOne.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_2\" + translateChoiceToFilename(pe.secOneChoose.SelectedValue.ToString(), 2), (bool) reverseMainCheck.IsChecked);
             if (pe.secTwoChoose.SelectedValue != "None")
-                pl.secondaryTwo.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_2\" + translateChoiceToFilename(pe.secTwoChoose.SelectedValue.ToString(), 2));
+                pl.secondaryTwo.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_2\" + translateChoiceToFilename(pe.secTwoChoose.SelectedValue.ToString(), 2), (bool)reverseMainCheck.IsChecked);
             if (pe.secThreeChoose.SelectedValue != "None")
-                pl.secondaryThree.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_2\" + translateChoiceToFilename(pe.secThreeChoose.SelectedValue.ToString(), 2));
+                pl.secondaryThree.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_2\" + translateChoiceToFilename(pe.secThreeChoose.SelectedValue.ToString(), 2), (bool)reverseMainCheck.IsChecked);
             if (pe.mainChoose.SelectedValue != "None" && pe.doubleChoose.SelectedValue == "None")
             {
                 pl.mainImage.Visibility = Visibility.Visible;
                 pl.doublesOneImage.Visibility = Visibility.Hidden;
                 pl.doublesTwoImage.Visibility = Visibility.Hidden;
-                pl.mainImage.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.mainChoose.SelectedValue.ToString(), 1));
+                pl.mainImage.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.mainChoose.SelectedValue.ToString(), 1), (bool)reverseMainCheck.IsChecked);
             } else if (pe.mainChoose.SelectedValue != "None" && pe.doubleChoose.SelectedValue != "None")
             {
                 pl.mainImage.Visibility = Visibility.Hidden;
                 pl.doublesOneImage.Visibility = Visibility.Visible;
                 pl.doublesTwoImage.Visibility = Visibility.Visible;
-                pl.doublesOneImage.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.mainChoose.SelectedValue.ToString(), 1));
-                pl.doublesTwoImage.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.doubleChoose.SelectedValue.ToString(), 1));
+                pl.doublesOneImage.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.mainChoose.SelectedValue.ToString(), 1), (bool)reverseMainCheck.IsChecked);
+                pl.doublesTwoImage.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.doubleChoose.SelectedValue.ToString(), 1), (bool)reverseMainCheck.IsChecked);
 
             }
+
+            //if ((bool) reverseMainCheck.IsChecked)
+            //{
+            //    BitmapImage bi = new BitmapImage();
+
+            //    bi.BeginInit();
+            //    bi = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.mainChoose.SelectedValue.ToString(), 1));
+            //    bi.Rotation = Rotation.Rotate180;
+
+            //    bi.EndInit();
+
+
+            //    pl.mainImage.Source = bi;
+            //}
+
         }
 
         private String translateChoiceToFilename(String str, int number)

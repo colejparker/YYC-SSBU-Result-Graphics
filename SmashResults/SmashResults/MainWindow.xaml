@@ -14,7 +14,7 @@
             <RadioButton x:Name="uofcRadio" Content="U of C" Height="20" Canvas.Left="38" Canvas.Top="85" Width="106" GroupName="SchoolChoice" IsChecked="True"/>
             <RadioButton x:Name="mruRadio" Content="MRU" Height="20" Canvas.Left="38" Canvas.Top="110" Width="106" GroupName="SchoolChoice"/>
             <TextBox x:Name="dateEntry" Height="19" Canvas.Left="124" TextWrapping="Wrap" Text="Enter text here..." Canvas.Top="130" Width="294"/>
-            <TextBox x:Name="entrantsEntry" Height="19" Canvas.Left="124" TextWrapping="Wrap" Text="Enter number here..." Canvas.Top="154" Width="294"/>
+            <TextBox x:Name="entrantsEntry" Height="19" Canvas.Left="124" TextWrapping="Wrap" Text="Enter entrants here..." Canvas.Top="153" Width="294"/>
             <TextBlock Height="19" Canvas.Left="38" TextWrapping="Wrap" Text="Date" Canvas.Top="130" Width="81"/>
             <TextBlock Height="19" Canvas.Left="38" TextWrapping="Wrap" Text="Entrants" Canvas.Top="154" Width="81"/>
             <Button x:Name="submitButton" Content="Submit&#xD;&#xA;" Height="74" Canvas.Left="722" Canvas.Top="921" Width="504" FontSize="48" VerticalAlignment="Center" Click="submitButton_Click"/>
@@ -26,6 +26,9 @@
             <local:PlacingEntry x:Name="sixthEntry" Height="180" Canvas.Left="478" Canvas.Top="497" Width="380"/>
             <local:PlacingEntry x:Name="seventhEntry" Height="180" Canvas.Left="934" Canvas.Top="497" Width="380"/>
             <local:PlacingEntry x:Name="eighthEntry" Height="180" Canvas.Left="1382" Canvas.Top="497" Width="380"/>
+            <TextBlock Height="19" Canvas.Left="38" TextWrapping="Wrap" Text="Number" Canvas.Top="176.335" Width="81"/>
+            <TextBox x:Name="numberEntry" Height="19" Canvas.Left="124" TextWrapping="Wrap" Text="Enter number here..." Canvas.Top="175.335" Width="294"/>
+            <CheckBox x:Name="reverseMainCheck" Content="Reverse Mains" Height="20" Canvas.Left="38" Canvas.Top="200.335" Width="162.667"/>
         </Canvas>
         <Canvas x:Name="ResultsCanvas" Height="1080" Width="1920" Visibility="Hidden">
             <Image x:Name="MRUPic" Height="1080" Width="1920" Source="mrusmash.png"/>
@@ -45,8 +48,8 @@
             <Viewbox Height="56.559" Canvas.Left="1301.07" Canvas.Top="10" Width="497.884">
                 <TextBlock x:Name="dateText" Height="56.037" TextAlignment="Center" TextWrapping="Wrap" Width="413.657" Foreground="#FFE01E22" FontFamily="Berlin Sans FB" FontSize="48" HorizontalAlignment="Center" RenderTransformOrigin="0.621,0.621"><Run Text="00"/><LineBreak/><Run/></TextBlock>
             </Viewbox>
-            <Viewbox Height="74.559" Canvas.Left="712" Width="497.884" Canvas.Top="4">
-                <TextBlock x:Name="titleText" Height="58.446" TextAlignment="Center" TextWrapping="Wrap" Width="402.391" Foreground="#FFE01E22" FontFamily="Berlin Sans FB" FontSize="48" HorizontalAlignment="Center" RenderTransformOrigin="0.621,0.621" Text="SMASH @ U OF C" Background="White"/>
+            <Viewbox Height="74.559" Canvas.Left="513.878" Width="848.173" Canvas.Top="2.5">
+                <TextBlock x:Name="titleText" Height="58.446" TextAlignment="Center" TextWrapping="Wrap" Width="524.678" Foreground="#FFE01E22" FontFamily="Berlin Sans FB" FontSize="48" HorizontalAlignment="Center" RenderTransformOrigin="0.621,0.621" Text="SMASH @ U OF C" Background="White"/>
             </Viewbox>
             <Viewbox Height="300.86" Canvas.Left="1043.521" Canvas.Top="242.67" Width="279.893">
                 <local:Placing x:Name="thirdPlacing" Height="116.654" Width="114.872"/>

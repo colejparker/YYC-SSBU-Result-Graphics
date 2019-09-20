@@ -11,8 +11,8 @@
     </Window.Resources>
     <Canvas x:Name="Main_Canvas" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Margin="0,0,0,-17.5">
         <Canvas x:Name="SelectCanvas" Height="1080" Width="1920" Visibility="Visible">
-            <RadioButton x:Name="uofcRadio" Content="U of C" Height="20" Canvas.Left="38" Canvas.Top="85" Width="106" GroupName="SchoolChoice" IsChecked="True"/>
-            <RadioButton x:Name="mruRadio" Content="MRU" Height="20" Canvas.Left="38" Canvas.Top="110" Width="106" GroupName="SchoolChoice"/>
+            <RadioButton x:Name="uofcRadio" Content="U of C" Height="20" Canvas.Left="38" Canvas.Top="56.5" Width="106" GroupName="SchoolChoice" IsChecked="True"/>
+            <RadioButton x:Name="mruRadio" Content="MRU" Height="20" Canvas.Left="38" Canvas.Top="81.5" Width="106" GroupName="SchoolChoice"/>
             <TextBox x:Name="dateEntry" Height="19" Canvas.Left="124" TextWrapping="Wrap" Text="Enter text here..." Canvas.Top="130" Width="294"/>
             <TextBox x:Name="entrantsEntry" Height="19" Canvas.Left="124" TextWrapping="Wrap" Text="Enter entrants here..." Canvas.Top="153" Width="294"/>
             <TextBlock Height="19" Canvas.Left="38" TextWrapping="Wrap" Text="Date" Canvas.Top="130" Width="81"/>
@@ -29,10 +29,12 @@
             <TextBlock Height="19" Canvas.Left="38" TextWrapping="Wrap" Text="Number" Canvas.Top="176.335" Width="81"/>
             <TextBox x:Name="numberEntry" Height="19" Canvas.Left="124" TextWrapping="Wrap" Text="Enter number here..." Canvas.Top="175.335" Width="294"/>
             <CheckBox x:Name="reverseMainCheck" Content="Reverse Mains" Height="20" Canvas.Left="38" Canvas.Top="200.335" Width="162.667"/>
+            <RadioButton x:Name="auRadio" Content="Ambrose" Height="20" Canvas.Left="38" Canvas.Top="105" Width="106" GroupName="SchoolChoice"/>
         </Canvas>
-        <Canvas x:Name="ResultsCanvas" Height="1080" Width="1920" Visibility="Hidden">
+        <Canvas x:Name="ResultsCanvas" Height="1080" Width="1920" Background="#FFBE9840" Visibility="Hidden">
             <Image x:Name="MRUPic" Height="1080" Width="1920" Source="mrusmash.png"/>
             <Image x:Name="UOFCPic" Height="1080" Width="1920" Source="uofcsmash.png"/>
+            <Image x:Name="AUPic" Height="1080" Width="1920" Source="ambrosesmash.png"/>
             <Viewbox Height="300.86" Canvas.Left="177.521" Canvas.Top="242.67" Width="279.893">
                 <local:Placing x:Name="firstPlacing" Height="116.654" Width="114.872"/>
             </Viewbox>

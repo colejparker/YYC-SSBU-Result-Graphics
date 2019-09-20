@@ -52,8 +52,9 @@ namespace SmashResults
                 textColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FF1C5C9A"));
                 MRUPic.Visibility = Visibility.Visible;
                 UOFCPic.Visibility = Visibility.Hidden;
+                AUPic.Visibility = Visibility.Hidden;
             }
-            else
+            else if ((bool)uofcRadio.IsChecked)
             {
                 if (numberEntry.Text == "Enter number here..." || numberEntry.Text == "")
                 {
@@ -66,6 +67,21 @@ namespace SmashResults
                 textColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFE01E22"));
                 MRUPic.Visibility = Visibility.Hidden;
                 UOFCPic.Visibility = Visibility.Visible;
+                AUPic.Visibility = Visibility.Hidden;
+            } else
+            {
+                if (numberEntry.Text == "Enter number here..." || numberEntry.Text == "")
+                {
+                    titleText.Text = "SMASH @ Ambrose";
+                }
+                else
+                {
+                    titleText.Text = "SMASH @ Ambrose #" + numberEntry.Text;
+                }
+                textColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFBE9840"));
+                MRUPic.Visibility = Visibility.Hidden;
+                AUPic.Visibility = Visibility.Visible;
+                UOFCPic.Visibility = Visibility.Hidden;
             }
             titleText.Foreground = textColor;
             dateText.Foreground = textColor;

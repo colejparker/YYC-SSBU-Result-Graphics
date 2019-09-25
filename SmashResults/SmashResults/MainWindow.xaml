@@ -47,11 +47,11 @@
                         <SolidColorBrush Color="#FF1C5C9A"/>
                     </TextBlock.Foreground><Run Text="00 ENTRANTS"/><LineBreak/><Run/></TextBlock>
             </Viewbox>
-            <Viewbox Height="56.559" Canvas.Left="1301.07" Canvas.Top="10" Width="497.884">
+            <Viewbox Height="56.559" Canvas.Left="1295.07" Canvas.Top="10" Width="614.93">
                 <TextBlock x:Name="dateText" Height="56.037" TextAlignment="Center" TextWrapping="Wrap" Width="413.657" Foreground="#FFE01E22" FontFamily="Berlin Sans FB" FontSize="48" HorizontalAlignment="Center" RenderTransformOrigin="0.621,0.621"><Run Text="00"/><LineBreak/><Run/></TextBlock>
             </Viewbox>
             <Viewbox Height="74.559" Canvas.Left="513.878" Width="848.173" Canvas.Top="2.5">
-                <TextBlock x:Name="titleText" Height="58.446" TextAlignment="Center" TextWrapping="Wrap" Width="524.678" Foreground="#FFE01E22" FontFamily="Berlin Sans FB" FontSize="48" HorizontalAlignment="Center" RenderTransformOrigin="0.621,0.621" Text="SMASH @ U OF C" Background="White"/>
+                <TextBlock x:Name="titleText" Height="58.446" TextAlignment="Center" TextWrapping="Wrap" Width="524.678" Foreground="#FFE01E22" FontFamily="Berlin Sans FB" FontSize="48" HorizontalAlignment="Center" RenderTransformOrigin="0.621,0.621" Text="SMASH @Ambrose" Background="White"/>
             </Viewbox>
             <Viewbox Height="300.86" Canvas.Left="1043.521" Canvas.Top="242.67" Width="279.893">
                 <local:Placing x:Name="thirdPlacing" Height="116.654" Width="114.872"/>

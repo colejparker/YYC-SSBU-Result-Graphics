@@ -33,7 +33,7 @@ namespace SmashResults
 
         private void populateSecondaries()
         {
-            var imagePath = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) +  @"\Chara_2";
+            var imagePath = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_2";
             string[] files = Directory.GetFiles(imagePath);
             secOneChoose.Items.Add("None");
             secOneChoose.SelectedValue = "None";
@@ -41,8 +41,9 @@ namespace SmashResults
             secTwoChoose.SelectedValue = "None";
             secThreeChoose.Items.Add("None");
             secThreeChoose.SelectedValue = "None";
-            
-            foreach (string file in files) {
+
+            foreach (string file in files)
+            {
                 secOneChoose.Items.Add(translateFilenameToChoice(Path.GetFileName(file)));
                 secTwoChoose.Items.Add(translateFilenameToChoice(Path.GetFileName(file)));
                 secThreeChoose.Items.Add(translateFilenameToChoice(Path.GetFileName(file)));

@@ -39,61 +39,24 @@ namespace SmashResults
 
         private void submitButton_Click(object sender, RoutedEventArgs e)
         {
-            Brush textColor = null;
             if ((bool) mruRadio.IsChecked)
             {
-                if (numberEntry.Text == "Enter number here..." || numberEntry.Text == "")
-                {
-                    titleText.Text = "SMASH @ MRU";
-                } else
-                {
-                    titleText.Text = "SMASH @ MRU #" + numberEntry.Text;
-                }
-                textColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FF1C5C9A"));
                 MRUPic.Visibility = Visibility.Visible;
                 UOFCPic.Visibility = Visibility.Hidden;
                 AUPic.Visibility = Visibility.Hidden;
             }
             else if ((bool)uofcRadio.IsChecked)
             {
-                if (numberEntry.Text == "Enter number here..." || numberEntry.Text == "")
-                {
-                    titleText.Text = "SMASH @ U OF C";
-                }
-                else
-                {
-                    titleText.Text = "SMASH @ U OF C #" + numberEntry.Text;
-                }
-                textColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFE01E22"));
+                
                 MRUPic.Visibility = Visibility.Hidden;
                 UOFCPic.Visibility = Visibility.Visible;
                 AUPic.Visibility = Visibility.Hidden;
             } else
             {
-                if (numberEntry.Text == "Enter number here..." || numberEntry.Text == "")
-                {
-                    titleText.Text = "SMASH @ Ambrose";
-                }
-                else
-                {
-                    titleText.Text = "SMASH @ Ambrose #" + numberEntry.Text;
-                }
-                textColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFBE9840"));
                 MRUPic.Visibility = Visibility.Hidden;
                 AUPic.Visibility = Visibility.Visible;
                 UOFCPic.Visibility = Visibility.Hidden;
             }
-            titleText.Foreground = textColor;
-            dateText.Foreground = textColor;
-            entrantsText.Foreground = textColor;
-            firstPlacing.tagText.Foreground = textColor;
-            secondPlacing.tagText.Foreground = textColor;
-            thirdPlacing.tagText.Foreground = textColor;
-            fourthPlacing.tagText.Foreground = textColor;
-            fifthPlacing.tagText.Foreground = textColor;
-            sixthPlacing.tagText.Foreground = textColor;
-            seventhPlacing.tagText.Foreground = textColor;
-            eighthPlacing.tagText.Foreground = textColor;
             placingToEntry(firstEntry, firstPlacing);
             placingToEntry(secondEntry, secondPlacing);
             placingToEntry(thirdEntry, thirdPlacing);
@@ -122,7 +85,6 @@ namespace SmashResults
 
         private void placingToEntry(PlacingEntry pe, Placing pl)
         {
-            pl.tagText.Text = pe.nameEntry.Text.ToUpper();
             if (pe.secOneChoose.SelectedValue != "None")
                 pl.secondaryOne.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_2\" + translateChoiceToFilename(pe.secOneChoose.SelectedValue.ToString(), 2), (bool) reverseMainCheck.IsChecked);
             if (pe.secTwoChoose.SelectedValue != "None")
@@ -144,20 +106,6 @@ namespace SmashResults
                 pl.doublesTwoImage.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.doubleChoose.SelectedValue.ToString(), 1), (bool)reverseMainCheck.IsChecked);
 
             }
-
-            //if ((bool) reverseMainCheck.IsChecked)
-            //{
-            //    BitmapImage bi = new BitmapImage();
-
-            //    bi.BeginInit();
-            //    bi = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.mainChoose.SelectedValue.ToString(), 1));
-            //    bi.Rotation = Rotation.Rotate180;
-
-            //    bi.EndInit();
-
-
-            //    pl.mainImage.Source = bi;
-            //}
 
         }
 

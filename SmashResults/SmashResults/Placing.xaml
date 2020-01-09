@@ -18,7 +18,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="mainImage" Stretch="UniformToFill" Height="100" Width="100.039" Source="chara_1_bayonetta_01.png"/>
+        <Image x:Name="mainImage" Stretch="UniformToFill" Height="100" Width="100.039"/>
         <Image x:Name="secondaryOne" Height="14.96" Canvas.Left="84.899" Canvas.Top="85.04" Width="15.14"/>
         <Image x:Name="secondaryTwo" Height="14.96" Canvas.Left="84.899" Canvas.Top="70.004" Width="15.14"/>
         <Image x:Name="secondaryThree" Height="14.96" Canvas.Left="84.899" Canvas.Top="54.518" Width="15.14"/>

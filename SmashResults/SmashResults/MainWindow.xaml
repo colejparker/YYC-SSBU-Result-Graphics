@@ -10,7 +10,7 @@
         <Color x:Key="mruBlue">#FF1C5C9A</Color>
     </Window.Resources>
     <Canvas x:Name="Main_Canvas" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Margin="0,0,0,-17.5" Visibility="Visible">
-        <Canvas x:Name="SelectCanvas" Height="1080" Width="1920" Visibility="Hidden">
+        <Canvas x:Name="SelectCanvas" Height="1080" Width="1920" Visibility="Visible">
             <RadioButton x:Name="uofcRadio" Content="U of C" Height="20" Canvas.Left="38" Canvas.Top="56.5" Width="106" GroupName="SchoolChoice" IsChecked="True"/>
             <RadioButton x:Name="mruRadio" Content="MRU" Height="20" Canvas.Left="38" Canvas.Top="81.5" Width="106" GroupName="SchoolChoice"/>
             <TextBox x:Name="dateEntry" Height="19" Canvas.Left="124" TextWrapping="Wrap" Text="Enter text here..." Canvas.Top="130" Width="294"/>
@@ -29,30 +29,30 @@
             <CheckBox x:Name="reverseMainCheck" Content="Reverse Mains" Height="20" Canvas.Left="38" Canvas.Top="200.335" Width="162.667"/>
             <RadioButton x:Name="auRadio" Content="Ambrose" Height="20" Canvas.Left="38" Canvas.Top="105" Width="106" GroupName="SchoolChoice"/>
         </Canvas>
-        <Canvas x:Name="ResultsCanvas" Height="1080" Width="1920" Background="#FFBE9840">
+        <Canvas x:Name="ResultsCanvas" Height="1080" Width="1920" Background="#FFBE9840" Visibility="Hidden">
             <Image x:Name="MRUPic" Height="1080" Width="1920" Source="mru top 8!.png" Stretch="UniformToFill"/>
             <Image x:Name="UOFCPic" Height="1080" Width="1920" Source="uofctop8!.png" Visibility="Hidden"/>
             <Image x:Name="AUPic" Height="1080" Width="1920" Source="abrose top8!.png" Visibility="Hidden"/>
             <Viewbox Height="54" Canvas.Left="627.5" Canvas.Top="904.5" Width="126">
-                <TextBlock x:Name="entrantsText" TextWrapping="Wrap" Text="00" Foreground="White"/>
+                <TextBlock x:Name="entrantsText" TextWrapping="Wrap" Text="00" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
             <Viewbox Height="255.332" Canvas.Left="907.5" Canvas.Top="434.168" Width="269.666" Stretch="Fill">
                 <local:Placing x:Name="fifthPlacing" Height="100" Width="100"/>
             </Viewbox>
             <Viewbox Height="54" Canvas.Left="554" Canvas.Top="971.684" Width="165">
-                <TextBlock x:Name="dateText" TextWrapping="Wrap" Text="January 1, 2020" Foreground="White"/>
+                <TextBlock x:Name="dateText" TextWrapping="Wrap" Text="January 1, 2020" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
             <Viewbox Height="37.5" Canvas.Left="822.5" Canvas.Top="746.308" Width="240">
-                <TextBlock x:Name="seventhText" TextWrapping="Wrap" Text="COAL" Foreground="White"/>
+                <TextBlock x:Name="seventhText" TextWrapping="Wrap" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
             <Viewbox Height="37.5" Canvas.Left="1699.5" Canvas.Top="978" Width="220.5">
-                <TextBlock x:Name="eighthText" TextWrapping="Wrap" Text="COAL" Foreground="White"/>
+                <TextBlock x:Name="eighthText" TextWrapping="Wrap" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
             <Viewbox Height="37.5" Canvas.Left="1543.5" Canvas.Top="654" Width="237">
-                <TextBlock x:Name="sixthText" TextWrapping="Wrap" Text="COAL" Foreground="White"/>
+                <TextBlock x:Name="sixthText" TextWrapping="Wrap" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
             <Viewbox Height="37.5" Canvas.Left="649.5" Canvas.Top="421.5" Width="237">
-                <TextBlock x:Name="fifthText" TextWrapping="Wrap" Text="COAL" Foreground="White"/>
+                <TextBlock x:Name="fifthText" TextWrapping="Wrap" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
             <Viewbox Height="444.834" Canvas.Left="34" Canvas.Top="32.833" Width="502.167" Stretch="Fill">
                 <local:Placing x:Name="firstPlacing" Height="100" Width="99.942"/>
@@ -79,16 +79,16 @@
             <Image x:Name="AUPicTop" Height="1080" Width="1920" Source="abrose top8!top.png"/>
             <Image x:Name="UOFCPicTop" Height="1080" Width="1920" Source="uofctop8!top.png"/>
             <Viewbox Height="45.5" Canvas.Left="34" Canvas.Top="421.5" Width="318">
-                <TextBlock x:Name="firstText" TextWrapping="Wrap" Text="COAL" Foreground="White"/>
+                <TextBlock x:Name="firstText" TextWrapping="Wrap" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
             <Viewbox x:Name="Viewbox20" Height="37.5" Canvas.Left="610" Canvas.Top="301.5" Width="246">
-                <TextBlock x:Name="secondText" TextWrapping="Wrap" Text="COAL" Foreground="White"/>
+                <TextBlock x:Name="secondText" TextWrapping="Wrap" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
             <Viewbox Height="37.5" Canvas.Left="1022" Canvas.Top="308.572" Width="246">
-                <TextBlock x:Name="thirdText" TextWrapping="Wrap" Text="COAL" Foreground="White"/>
+                <TextBlock x:Name="thirdText" TextWrapping="Wrap" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
             <Viewbox Height="37.5" Canvas.Left="1426" Canvas.Top="308.572" Width="246">
-                <TextBlock x:Name="fourthText" TextWrapping="Wrap" Text="COAL" Foreground="White"/>
+                <TextBlock x:Name="fourthText" TextWrapping="Wrap" Foreground="White" FontFamily="Bebas Kai"/>
             </Viewbox>
         </Canvas>
     </Canvas>

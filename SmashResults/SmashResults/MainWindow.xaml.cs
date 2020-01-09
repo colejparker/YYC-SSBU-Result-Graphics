@@ -44,6 +44,9 @@ namespace SmashResults
                 MRUPic.Visibility = Visibility.Visible;
                 UOFCPic.Visibility = Visibility.Hidden;
                 AUPic.Visibility = Visibility.Hidden;
+                MRUPicTop.Visibility = Visibility.Visible;
+                UOFCPicTop.Visibility = Visibility.Hidden;
+                AUPicTop.Visibility = Visibility.Hidden;
             }
             else if ((bool)uofcRadio.IsChecked)
             {
@@ -51,21 +54,35 @@ namespace SmashResults
                 MRUPic.Visibility = Visibility.Hidden;
                 UOFCPic.Visibility = Visibility.Visible;
                 AUPic.Visibility = Visibility.Hidden;
+                MRUPicTop.Visibility = Visibility.Hidden;
+                UOFCPicTop.Visibility = Visibility.Visible;
+                AUPicTop.Visibility = Visibility.Hidden;
             } else
             {
                 MRUPic.Visibility = Visibility.Hidden;
                 AUPic.Visibility = Visibility.Visible;
                 UOFCPic.Visibility = Visibility.Hidden;
+                MRUPicTop.Visibility = Visibility.Hidden;
+                UOFCPicTop.Visibility = Visibility.Hidden;
+                AUPicTop.Visibility = Visibility.Visible;
             }
             placingToEntry(firstEntry, firstPlacing);
+            firstText.Text = firstEntry.nameEntry.Text;
             placingToEntry(secondEntry, secondPlacing);
+            secondText.Text = secondEntry.nameEntry.Text;
             placingToEntry(thirdEntry, thirdPlacing);
+            thirdText.Text = thirdEntry.nameEntry.Text;
             placingToEntry(fourthEntry, fourthPlacing);
+            fourthText.Text = fourthEntry.nameEntry.Text;
             placingToEntry(fifthEntry, fifthPlacing);
+            fifthText.Text = fifthEntry.nameEntry.Text;
             placingToEntry(sixthEntry, sixthPlacing);
+            sixthText.Text = sixthEntry.nameEntry.Text;
             placingToEntry(seventhEntry, seventhPlacing);
+            seventhText.Text = seventhEntry.nameEntry.Text;
             placingToEntry(eighthEntry, eighthPlacing);
-            entrantsText.Text = entrantsEntry.Text + " ENTRANTS";
+            eighthText.Text = eighthEntry.nameEntry.Text;
+            entrantsText.Text = entrantsEntry.Text;
             dateText.Text = dateEntry.Text;
             ResultsCanvas.Visibility = Visibility.Visible;
         }

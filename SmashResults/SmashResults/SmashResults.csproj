@@ -188,5 +188,23 @@
   <ItemGroup>
     <Resource Include="chara_1_banjo_01.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mru top 8!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mru top 8!top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="uofctop8!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="abrose top8!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="abrose top8!top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="uofctop8!top.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

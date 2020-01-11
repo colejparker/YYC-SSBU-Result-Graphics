@@ -18,6 +18,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Image x:Name="mainImageBackdrop" Stretch="UniformToFill" Height="100" Width="100.039" Canvas.Left="-1.797" d:IsHidden="True"/>
         <Image x:Name="mainImage" Stretch="UniformToFill" Height="100" Width="100.039"/>
         <Image x:Name="secondaryOne" Height="14.96" Canvas.Left="84.899" Canvas.Top="85.04" Width="15.14"/>
         <Image x:Name="secondaryTwo" Height="14.96" Canvas.Left="84.899" Canvas.Top="70.004" Width="15.14"/>

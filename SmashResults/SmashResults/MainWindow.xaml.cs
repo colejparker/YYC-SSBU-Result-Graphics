@@ -39,7 +39,11 @@ namespace SmashResults
 
         private void submitButton_Click(object sender, RoutedEventArgs e)
         {
-            if ((bool) mruRadio.IsChecked)
+            if ((bool) meleeCheck.IsChecked)
+            {
+
+            }
+            else if ((bool) mruRadio.IsChecked)
             {
                 MRUPic.Visibility = Visibility.Visible;
                 UOFCPic.Visibility = Visibility.Hidden;

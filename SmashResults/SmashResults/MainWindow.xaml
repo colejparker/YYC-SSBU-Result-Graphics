@@ -28,6 +28,7 @@
             <local:PlacingEntry x:Name="eighthEntry" Height="180" Canvas.Left="1382" Canvas.Top="497" Width="380"/>
             <CheckBox x:Name="reverseMainCheck" Content="Reverse Mains" Height="20" Canvas.Left="38" Canvas.Top="200.335" Width="162.667"/>
             <RadioButton x:Name="auRadio" Content="Ambrose" Height="20" Canvas.Left="38" Canvas.Top="105" Width="106" GroupName="SchoolChoice"/>
+            <CheckBox x:Name="meleeCheck" Content="Melee" Height="20" Canvas.Left="205.667" Canvas.Top="200.335" Width="162.667"/>
         </Canvas>
         <Canvas x:Name="ResultsCanvas" Height="1080" Width="1920" Background="#FFBE9840" Visibility="Hidden">
             <Image x:Name="MRUPic" Height="1080" Width="1920" Source="mru top 8!.png" Stretch="UniformToFill"/>

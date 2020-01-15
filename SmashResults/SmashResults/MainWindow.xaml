@@ -32,7 +32,9 @@
         </Canvas>
         <Canvas x:Name="ResultsCanvas" Height="1080" Width="1920" Background="#FFBE9840" Visibility="Hidden">
             <Image x:Name="MRUPic" Height="1080" Width="1920" Source="mru top 8!.png" Stretch="UniformToFill"/>
+            <Image x:Name="MRUMeleePic" Height="1080" Width="1920" Source="melee mru top 8!.png" Stretch="UniformToFill"/>
             <Image x:Name="UOFCPic" Height="1080" Width="1920" Source="uofctop8!.png" Visibility="Hidden"/>
+            <Image x:Name="UOFCMeleePic" Height="1080" Width="1920" Source="melee uofctop8!.png" Stretch="UniformToFill"/>
             <Image x:Name="AUPic" Height="1080" Width="1920" Source="abrose top8!.png" Visibility="Hidden"/>
             <Viewbox Height="54" Canvas.Left="627.5" Canvas.Top="904.5" Width="126">
                 <TextBlock x:Name="entrantsText" TextWrapping="Wrap" Text="00" Foreground="White" FontFamily="Bebas Kai"/>
@@ -55,7 +57,7 @@
             <Viewbox Height="37.5" Canvas.Left="649.5" Canvas.Top="421.5" Width="237" HorizontalAlignment="Right">
                 <TextBlock x:Name="fifthText" TextWrapping="Wrap" Foreground="White" FontFamily="Bebas Kai" HorizontalAlignment="Right"/>
             </Viewbox>
-            <Viewbox Height="449.334" Canvas.Left="34" Canvas.Top="32.833" Width="504.667" Stretch="Fill">
+            <Viewbox Height="449.334" Canvas.Left="34" Canvas.Top="32.833" Width="452.667" Stretch="Fill">
                 <local:Placing x:Name="firstPlacing" Height="100" Width="99.942"/>
             </Viewbox>
             <Viewbox Height="316" Canvas.Left="612" Canvas.Top="47" Width="345" Stretch="Fill">

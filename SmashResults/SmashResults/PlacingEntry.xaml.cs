@@ -29,6 +29,192 @@ namespace SmashResults
 
             populateSecondaries();
             populateMains();
+            nameEntry.TextChanged += onTextChange;
+        }
+
+        private void onTextChange(object sender, TextChangedEventArgs e)
+        {
+            switch (nameEntry.Text.ToLower())
+            {
+                case "coal":
+                    mainChoose.SelectedValue = "piranhaplant04";
+                    break;
+                case "amalga":
+                    mainChoose.SelectedValue = "pacman05";
+                    break;
+                case "amphabulous":
+                    mainChoose.SelectedValue = "samus06";
+                    break;
+                case "anderoo":
+                    mainChoose.SelectedValue = "falco01";
+                    secOneChoose.SelectedValue = "dedede02";
+                    break;
+                case "arkb0t":
+                    mainChoose.SelectedValue = "inkling03";
+                    break;
+                case "artichoke":
+                    mainChoose.SelectedValue = "snake03";
+                    break;
+                case "ashley":
+                    mainChoose.SelectedValue = "mario00";
+                    secOneChoose.SelectedValue = "lucina00";
+                    break;
+                case "bruh":
+                    mainChoose.SelectedValue = "rosalina07";
+                    break;
+                case "bwin":
+                    mainChoose.SelectedValue = "luigi04";
+                    break;
+                case "camex":
+                    mainChoose.SelectedValue = "pokemontrainer01";
+                    secOneChoose.SelectedValue = "sonic00";
+                    break;
+                case "chomo":
+                    mainChoose.SelectedValue = "inkling03";
+                    break;
+                case "charan":
+                    mainChoose.SelectedValue = "chrom05";
+                    break;
+                case "cherrycola":
+                    mainChoose.SelectedValue = "roy01";
+                    break;
+                case "comicaltyphoon":
+                    mainChoose.SelectedValue = "kirby04";
+                    break;
+                case "cyu":
+                    mainChoose.SelectedValue = "dedede07";
+                    break;
+                case "face":
+                    mainChoose.SelectedValue = "krool00";
+                    break;
+                case "flores":
+                    mainChoose.SelectedValue = "joker05";
+                    break;
+                case "folie":
+                    mainChoose.SelectedValue = "palutena01";
+                    break;
+                case "furaze":
+                    mainChoose.SelectedValue = "zelda00";
+                    break;
+                case "gatr":
+                    mainChoose.SelectedValue = "snake05";
+                    break;
+                case "gbeast":
+                    mainChoose.SelectedValue = "ridley05";
+                    break;
+                case "ghost":
+                    mainChoose.SelectedValue = "piranhaplant00";
+                    break;
+                case "hero":
+                    mainChoose.SelectedValue = "link00";
+                    break;
+                case "ikey":
+                    mainChoose.SelectedValue = "lucina06";
+                    break;
+                case "inomx4":
+                    mainChoose.SelectedValue = "jigglypuff05";
+                    break;
+                case "ironsnake208":
+                    mainChoose.SelectedValue = "ness05";
+                    secOneChoose.SelectedValue = "falco00";
+                    break;
+                case "Jimbo":
+                    mainChoose.SelectedValue = "link00";
+                    break;
+                case "John dura":
+                    mainChoose.SelectedValue = "fox00";
+                    break;
+                case "khaos":
+                    mainChoose.SelectedValue = "mario03";
+                    secOneChoose.SelectedValue = "ken07";
+                    secTwoChoose.SelectedValue = "ryu03";
+                    break;
+                case "lam":
+                    mainChoose.SelectedValue = "lucario00";
+                    break;
+                case "marthegreat":
+                    mainChoose.SelectedValue = "littlemac07";
+                    break;
+                case "marx":
+                    mainChoose.SelectedValue = "wiifit00";
+                    break;
+                case "md3":
+                    mainChoose.SelectedValue = "sonic00";
+                    break;
+                case "mixtape":
+                    mainChoose.SelectedValue = "pacman03";
+                    break;
+                case "moobesor":
+                    mainChoose.SelectedValue = "pokemontrainer04";
+                    break;
+                case "nick fury":
+                    mainChoose.SelectedValue = "wario05";
+                    break;
+                case "nickbra":
+                    mainChoose.SelectedValue = "littlemac03";
+                    break;
+                case "niubee":
+                    mainChoose.SelectedValue = "palutena05";
+                    break;
+                case "parfit":
+                    mainChoose.SelectedValue = "yoshi01";
+                    secOneChoose.SelectedValue = "wolf05";
+                    break;
+                case "prime":
+                    mainChoose.SelectedValue = "darksamus02";
+                    break;
+                case "quinn":
+                    mainChoose.SelectedValue = "mario06";
+                    break;
+                case "rustybot":
+                    mainChoose.SelectedValue = "megaman03";
+                    break;
+                case "sable":
+                    mainChoose.SelectedValue = "chrom00";
+                    break;
+                case "sesquip":
+                    nameEntry.Text = "Sesquipedalinis";
+                    mainChoose.SelectedValue = "robin00";
+                    break;
+                case "shrike":
+                    mainChoose.SelectedValue = "yoshi07";
+                    break;
+                case "sorry":
+                    mainChoose.SelectedValue = "bowser07";
+                    break;
+                case "stickr":
+                    mainChoose.SelectedValue = "wiifit03";
+                    secOneChoose.SelectedValue = "rosalina04";
+                    break;
+                case "thefreshprince":
+                    mainChoose.SelectedValue = "banjo00";
+                    break;
+                case "trillmatic":
+                    mainChoose.SelectedValue = "captainfalcon00";
+                    break;
+                case "ttb":
+                    mainChoose.SelectedValue = "terry00";
+                    break;
+                case "wamsa":
+                    mainChoose.SelectedValue = "donkeykong04";
+                    break;
+                case "wyan":
+                    mainChoose.SelectedValue = "peach00";
+                    break;
+                case "yeet":
+                    mainChoose.SelectedValue = "greninja04";
+                    break;
+                case "zain":
+                    mainChoose.SelectedValue = "link00";
+                    break;
+                case "zizo.v2":
+                    mainChoose.SelectedValue = "banjo03";
+                    break;
+                case "zsar":
+                    mainChoose.SelectedValue = "bowser00";
+                    break;
+
+            }
         }
 
         private void populateSecondaries()

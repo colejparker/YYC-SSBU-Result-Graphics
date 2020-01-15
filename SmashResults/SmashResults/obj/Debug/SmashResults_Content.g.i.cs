@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("uofccolor.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("melee%20uofctop8!.png")]
 
 

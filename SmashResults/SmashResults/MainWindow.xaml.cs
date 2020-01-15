@@ -41,13 +41,35 @@ namespace SmashResults
         {
             if ((bool) meleeCheck.IsChecked)
             {
-
+                if ((bool) mruRadio.IsChecked)
+                {
+                    MRUPic.Visibility = Visibility.Hidden;
+                    AUPic.Visibility = Visibility.Hidden;
+                    UOFCPic.Visibility = Visibility.Hidden;
+                    MRUPicTop.Visibility = Visibility.Visible;
+                    UOFCPicTop.Visibility = Visibility.Hidden;
+                    AUPicTop.Visibility = Visibility.Hidden;
+                    MRUMeleePic.Visibility = Visibility.Visible;
+                    UOFCMeleePic.Visibility = Visibility.Hidden;
+                } else
+                {
+                    MRUPic.Visibility = Visibility.Hidden;
+                    AUPic.Visibility = Visibility.Hidden;
+                    UOFCPic.Visibility = Visibility.Hidden;
+                    MRUPicTop.Visibility = Visibility.Hidden;
+                    UOFCPicTop.Visibility = Visibility.Visible;
+                    AUPicTop.Visibility = Visibility.Hidden;
+                    MRUMeleePic.Visibility = Visibility.Hidden;
+                    UOFCMeleePic.Visibility = Visibility.Visible;
+                }
             }
             else if ((bool) mruRadio.IsChecked)
             {
                 MRUPic.Visibility = Visibility.Visible;
                 UOFCPic.Visibility = Visibility.Hidden;
                 AUPic.Visibility = Visibility.Hidden;
+                MRUMeleePic.Visibility = Visibility.Hidden;
+                UOFCMeleePic.Visibility = Visibility.Hidden;
                 MRUPicTop.Visibility = Visibility.Visible;
                 UOFCPicTop.Visibility = Visibility.Hidden;
                 AUPicTop.Visibility = Visibility.Hidden;
@@ -61,6 +83,8 @@ namespace SmashResults
                 MRUPicTop.Visibility = Visibility.Hidden;
                 UOFCPicTop.Visibility = Visibility.Visible;
                 AUPicTop.Visibility = Visibility.Hidden;
+                MRUMeleePic.Visibility = Visibility.Hidden;
+                UOFCMeleePic.Visibility = Visibility.Hidden;
             } else
             {
                 MRUPic.Visibility = Visibility.Hidden;
@@ -69,6 +93,8 @@ namespace SmashResults
                 MRUPicTop.Visibility = Visibility.Hidden;
                 UOFCPicTop.Visibility = Visibility.Hidden;
                 AUPicTop.Visibility = Visibility.Visible;
+                MRUMeleePic.Visibility = Visibility.Hidden;
+                UOFCMeleePic.Visibility = Visibility.Hidden;
             }
             placingToEntry(firstEntry, firstPlacing);
             firstText.Text = firstEntry.nameEntry.Text;

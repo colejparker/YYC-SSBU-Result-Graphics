@@ -6,9 +6,9 @@
              xmlns:local="clr-namespace:SmashResults"
              mc:Ignorable="d" Height="100.371" Width="100.039">
     <Canvas>
-        <Image x:Name="doublesOneImage" Stretch="UniformToFill" Height="102.286" Width="59.265" Canvas.Top="-2.286"/>
+        <Image x:Name="doublesOneImage" Stretch="UniformToFill" Height="102.286" Width="52.983" Canvas.Top="-2.286"/>
 
-        <Image x:Name="doublesTwoImage" Stretch="UniformToFill" Height="101.357" Width="58.552" Canvas.Left="-0.127" Canvas.Top="0.182" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="doublesTwoImage" Stretch="UniformToFill" Height="101.357" Width="50.025" Canvas.Left="0.223" Canvas.Top="-1.007" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="1" ScaleX="-1"/>

@@ -43,15 +43,7 @@ namespace SmashResults {
         
         #line 9 "..\..\Placing.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image mainImageBackdrop;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 10 "..\..\Placing.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image mainImage;
+        internal System.Windows.Controls.Image doublesOneImage;
         
         #line default
         #line hidden
@@ -59,13 +51,37 @@ namespace SmashResults {
         
         #line 11 "..\..\Placing.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image doublesTwoImage;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 21 "..\..\Placing.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image mainImageBackdrop;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 22 "..\..\Placing.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image mainImage;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 23 "..\..\Placing.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image secondaryOne;
         
         #line default
         #line hidden
         
         
-        #line 12 "..\..\Placing.xaml"
+        #line 24 "..\..\Placing.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image secondaryTwo;
         
@@ -73,25 +89,9 @@ namespace SmashResults {
         #line hidden
         
         
-        #line 13 "..\..\Placing.xaml"
+        #line 25 "..\..\Placing.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image secondaryThree;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 15 "..\..\Placing.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image doublesTwoImage;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 27 "..\..\Placing.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image doublesOneImage;
         
         #line default
         #line hidden
@@ -127,25 +127,25 @@ namespace SmashResults {
             switch (connectionId)
             {
             case 1:
-            this.mainImageBackdrop = ((System.Windows.Controls.Image)(target));
+            this.doublesOneImage = ((System.Windows.Controls.Image)(target));
             return;
             case 2:
-            this.mainImage = ((System.Windows.Controls.Image)(target));
-            return;
-            case 3:
-            this.secondaryOne = ((System.Windows.Controls.Image)(target));
-            return;
-            case 4:
-            this.secondaryTwo = ((System.Windows.Controls.Image)(target));
-            return;
-            case 5:
-            this.secondaryThree = ((System.Windows.Controls.Image)(target));
-            return;
-            case 6:
             this.doublesTwoImage = ((System.Windows.Controls.Image)(target));
             return;
+            case 3:
+            this.mainImageBackdrop = ((System.Windows.Controls.Image)(target));
+            return;
+            case 4:
+            this.mainImage = ((System.Windows.Controls.Image)(target));
+            return;
+            case 5:
+            this.secondaryOne = ((System.Windows.Controls.Image)(target));
+            return;
+            case 6:
+            this.secondaryTwo = ((System.Windows.Controls.Image)(target));
+            return;
             case 7:
-            this.doublesOneImage = ((System.Windows.Controls.Image)(target));
+            this.secondaryThree = ((System.Windows.Controls.Image)(target));
             return;
             }
             this._contentLoaded = true;

@@ -213,6 +213,39 @@ namespace SmashResults
                 case "zsar":
                     mainChoose.SelectedValue = "bowser00";
                     break;
+                case "the fresh prince":
+                    mainChoose.SelectedValue = "banjo00";
+                    break;
+                case "spencomatic":
+                    mainChoose.SelectedValue = "mario06";
+                    break;
+                case "smashemhashem":
+                    mainChoose.SelectedValue = "pikachu06";
+                    break;
+                case "crackers":
+                    mainChoose.SelectedValue = "meleepeach00";
+                    break;
+                case "nobu":
+                    mainChoose.SelectedValue = "meleefox02";
+                    break;
+                case "rats!":
+                    mainChoose.SelectedValue = "meleepika00";
+                    break;
+                case "odin":
+                    mainChoose.SelectedValue = "meleemarth03";
+                    break;
+                case "jazz":
+                    mainChoose.SelectedValue = "meleeic01";
+                    break;
+                case "duckrobin":
+                    mainChoose.SelectedValue = "meleefox00";
+                    break;
+                case "bryan t":
+                    mainChoose.SelectedValue = "meleefalco03";
+                    break;
+                case "swan":
+                    mainChoose.SelectedValue = "meleemarth01";
+                    break;
 
             }
         }

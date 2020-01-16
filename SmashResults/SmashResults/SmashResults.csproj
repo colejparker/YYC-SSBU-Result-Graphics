@@ -216,5 +216,14 @@
   <ItemGroup>
     <Resource Include="melee uofctop8!.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Banjo-Kazooie %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bayonetta %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bowser %288%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

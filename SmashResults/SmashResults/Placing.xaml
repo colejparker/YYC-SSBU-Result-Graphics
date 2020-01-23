@@ -4,25 +4,28 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SmashResults"
-             mc:Ignorable="d" Height="100.371" Width="100.039">
-    <Canvas>
-        <Image x:Name="doublesOneImage" Stretch="UniformToFill" Height="102.286" Width="52.983" Canvas.Top="-2.286"/>
-
-        <Image x:Name="doublesTwoImage" Stretch="UniformToFill" Height="101.357" Width="50.025" Canvas.Left="0.223" Canvas.Top="-1.007" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
-                    <SkewTransform AngleY="0" AngleX="0"/>
-                    <RotateTransform Angle="0.121"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+             mc:Ignorable="d" Height="100.371" Width="100.039" HorizontalAlignment="Center">
+    <Canvas HorizontalAlignment="Center">
         <Image x:Name="mainImageBackdrop" Stretch="UniformToFill" Height="100" Width="100.039" Canvas.Left="-1.797" d:IsHidden="True"/>
-        <Image x:Name="mainImage" Stretch="UniformToFill" Height="100" Width="100.039"/>
-        <Image x:Name="secondaryOne" Height="14.96" Canvas.Left="84.899" Canvas.Top="85.04" Width="15.14"/>
-        <Image x:Name="secondaryTwo" Height="14.96" Canvas.Left="84.899" Canvas.Top="70.004" Width="15.14"/>
-        <Image x:Name="secondaryThree" Height="14.96" Canvas.Left="84.899" Canvas.Top="54.518" Width="15.14"/>
+        <Image x:Name="mainImage" Stretch="UniformToFill" Height="100" Width="100.039" Canvas.Left="-50.333"/>
+        <Viewbox Height="100" Width="50" HorizontalAlignment="Center" Canvas.Left="-50.333" Margin="0">
+            <Image x:Name="doublesOneImage" Stretch="UniformToFill" Height="100" Width="50" HorizontalAlignment="Center" Margin="0"/>
+        </Viewbox>
+        <Viewbox Height="100" Width="50" HorizontalAlignment="Center" Canvas.Left="-0.294">
+            <Image x:Name="doublesTwoImage" Stretch="UniformToFill" StretchDirection="Both" Height="100" Width="50" RenderTransformOrigin="0,0" HorizontalAlignment="Center" Margin="0">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="0.121"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Viewbox>
+        <Image x:Name="secondaryOne" Height="14.96" Canvas.Left="34.566" Canvas.Top="85.04" Width="15.14"/>
+        <Image x:Name="secondaryTwo" Height="14.96" Canvas.Left="34.566" Canvas.Top="70.004" Width="15.14"/>
+        <Image x:Name="secondaryThree" Height="14.96" Canvas.Left="34.566" Canvas.Top="54.518" Width="15.14"/>
 
     </Canvas>
 </UserControl>

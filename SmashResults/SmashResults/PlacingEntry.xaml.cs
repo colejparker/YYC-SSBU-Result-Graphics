@@ -56,8 +56,9 @@ namespace SmashResults
                     mainChoose.SelectedValue = "snake03";
                     break;
                 case "ashley":
-                    mainChoose.SelectedValue = "mario00";
-                    secOneChoose.SelectedValue = "lucina00";
+                    mainChoose.SelectedValue = "marioco00";
+                    doubleChoose.SelectedValue = "lucinaco00";
+                    secOneChoose.SelectedValue = "ness00";
                     break;
                 case "bruh":
                     mainChoose.SelectedValue = "rosalina07";
@@ -135,9 +136,6 @@ namespace SmashResults
                 case "marthegreat":
                     mainChoose.SelectedValue = "littlemac07";
                     break;
-                case "marx":
-                    mainChoose.SelectedValue = "wiifit00";
-                    break;
                 case "md3":
                     mainChoose.SelectedValue = "sonic00";
                     break;
@@ -202,7 +200,7 @@ namespace SmashResults
                     mainChoose.SelectedValue = "peach00";
                     break;
                 case "yeet":
-                    mainChoose.SelectedValue = "greninja04";
+                    mainChoose.SelectedValue = "greninja07";
                     break;
                 case "zain":
                     mainChoose.SelectedValue = "link00";
@@ -214,7 +212,7 @@ namespace SmashResults
                     mainChoose.SelectedValue = "bowser00";
                     break;
                 case "the fresh prince":
-                    mainChoose.SelectedValue = "banjo00";
+                    mainChoose.SelectedValue = "banjo02";
                     break;
                 case "spencomatic":
                     mainChoose.SelectedValue = "mario06";
@@ -246,7 +244,16 @@ namespace SmashResults
                 case "swan":
                     mainChoose.SelectedValue = "meleemarth01";
                     break;
-
+                case "marx":
+                    mainChoose.SelectedValue = "wiifit02";
+                    secOneChoose.SelectedValue = "ness02";
+                    break;
+                case "vaneio":
+                    mainChoose.SelectedValue = "palutena06";
+                    break;
+                case "jimb0":
+                    mainChoose.SelectedValue = "link00";
+                    break;
             }
         }
 

@@ -148,7 +148,9 @@ namespace SmashResults
             {
                 pl.mainImage.Visibility = Visibility.Hidden;
                 pl.doublesOneImage.Visibility = Visibility.Visible;
+                pl.doublesOneImage.HorizontalAlignment = HorizontalAlignment.Center;
                 pl.doublesTwoImage.Visibility = Visibility.Visible;
+                pl.doublesTwoImage.HorizontalAlignment = HorizontalAlignment.Center;
                 pl.doublesOneImage.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.mainChoose.SelectedValue.ToString(), 1), (bool)reverseMainCheck.IsChecked);
                 pl.doublesTwoImage.Source = GetImage(System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + @"\Chara_1\" + translateChoiceToFilename(pe.doubleChoose.SelectedValue.ToString(), 1), (bool)reverseMainCheck.IsChecked);
 
